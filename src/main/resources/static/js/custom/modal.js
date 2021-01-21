@@ -12,9 +12,9 @@ let modal = {
 		},
 		pickProduct: function(){
 			if($("#evenOrOdd").text()==0){
-				$("#evenDayProduct").toggleClass("hide");
+				$("#evenDayProduct").removeClass("hide");
 			} else {
-				$("#oddDayProduct").toggleClass("hide");
+				$("#oddDayProduct").removeClass("hide");
 			}
 		}
 }

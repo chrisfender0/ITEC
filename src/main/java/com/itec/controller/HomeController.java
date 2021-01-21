@@ -73,4 +73,11 @@ public class HomeController {
 		return mv;
 	}
 	
+	@RequestMapping(value= {"aboutUs_executiveBios","aboutUs_executiveBios.html"})
+	public ModelAndView aboutUs_executiveBios(ModelAndView mv) {
+		System.out.println("aboutUs_executiveBios hit");
+		mv.setViewName("aboutUs_executiveBios");
+		return mv;
+	}
+	
 }

@@ -40,3 +40,12 @@
 	font-family: 'Schoolbell', cursive;
 	font-size: 200%;
 }
+
+.calloutRight .calloutLeft {
+	width: 50%;
+	margin: auto;
+}
+
+.text-align-center {
+	text-align: center;
+}
