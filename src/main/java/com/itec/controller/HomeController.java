@@ -45,4 +45,32 @@ public class HomeController {
 		return mv;
 	}
 	
+	@RequestMapping(value= {"products_dvds","products_dvds.html"})
+	public ModelAndView products_dvds(ModelAndView mv) {
+		System.out.println("products_dvds hit");
+		mv.setViewName("products_dvds");
+		return mv;
+	}
+	
+	@RequestMapping(value= {"products_plushToys","products_plushToys.html"})
+	public ModelAndView products_plushToys(ModelAndView mv) {
+		System.out.println("products_plushToys hit");
+		mv.setViewName("products_plushToys");
+		return mv;
+	}
+	
+	@RequestMapping(value= {"products_books","products_books.html"})
+	public ModelAndView products_books(ModelAndView mv) {
+		System.out.println("products_books hit");
+		mv.setViewName("products_books");
+		return mv;
+	}
+	
+	@RequestMapping(value= {"products_boardGames","products_boardGames.html"})
+	public ModelAndView products_boardGames(ModelAndView mv) {
+		System.out.println("products_boardGames hit");
+		mv.setViewName("products_boardGames");
+		return mv;
+	}
+	
 }
