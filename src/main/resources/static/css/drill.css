@@ -1,0 +1,369 @@
+/* CSS Document */
+
+/*********************************************************************
+
+Style Reset - removes browser defaults
+
+**********************************************************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+/*************************************************************
+MAIN GENERAL STYLES
+*************************************************************/
+body {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background-image:url(../images/bodyBg.jpg);
+	background-repeat:repeat-x;
+	background-color:#88ba55;
+	font-family:Arial, Helvetica, sans-serif;
+}
+img
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	behavior: url(css/png_fix.htc);
+}
+flash
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+form{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.clear{ 
+  	clear:both; 
+	/*** these next attributes are designed to keep the div 
+	height to 0 pixels high, critical for Safari and Netscape 7 ***/ 
+	  height:1px; 
+	  overflow:hidden; 
+	  line-height:1%; 
+	  font-size:0px; 
+	  margin-bottom:-1px; 
+} 
+/*************************************************
+UNIVERSAL STYLES
+**************************************************/
+h1{
+	margin:0 0 10px 0;
+	padding:0 0 0 0;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#320303;
+}
+h2{
+	margin:10px 0 5px 0;
+	padding:0 0 0 0;
+	font-size:14px;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#320303;
+}
+h3{
+	margin:0 10px 10px 0;
+	padding:0 0 0 0;
+	font-size:10px;
+	font-weight:bold;
+	color:#320303;
+}
+h4{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	color:#ddf088;
+	text-transform:uppercase;
+	font-size:12px;
+}
+h5{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	color:#053b69;
+	text-transform:uppercase;
+	font-size:12px;
+}
+h6{
+	margin:0 0 5px 0;
+	padding:0 0 0 0;
+	color:#980706;
+	text-transform:none;
+	font-size:10px;
+}
+p{
+	margin:0 0 0 0;
+	padding:0 0 7px 0;
+	color:#200202;
+	font-size:12px;
+	line-height:18px;
+}
+ul{
+	margin:0 0 0 0;
+	padding:0 0 7px 0;
+	color:#200202;
+	font-size:12px;
+	line-height:18px;
+	font-weight:bold;
+
+}
+li{
+	margin:0 0 0 30px;
+	padding:0 0 0 0;
+	color:#200202;
+	font-size:12px;
+	line-height:18px;
+	font-weight:normal;
+
+}
+a{	
+	color:#000;
+	text-decoration:underline;
+}
+a:hover{	
+	color:#fff;
+	text-decoration:underline;
+}
+a.link{	
+}
+a:hover.link{	
+}
+.generalHeader{
+	margin:0 0 0 8px;
+	padding:5px 0 5px 31px;
+	background-image:url(../images/blueDotArrow.png);
+	background-position:left;
+	background-repeat:no-repeat;
+}
+.generalHeader:hover{
+	background-image:url(../images/blueDotArrow_over.png);
+	background-position:left;
+	background-repeat:no-repeat;
+}
+.download{
+	margin:0 7px 0 0;
+	padding:0 0 0 0;
+	float:left;
+}
+/*************************************************
+CONTAIN
+**************************************************/
+#contain{
+	margin: 0 auto;
+	padding:0 0 0 0;
+	width:968px;
+	background-image:url(../images/containBg_drill.jpg);
+	background-repeat:no-repeat;
+	height:783px;
+}
+#header{
+	margin:0 0 0 52px;
+	padding:0 0 0 0;
+	width:835px;
+	height:173px;
+	background-image:url(../images/headerBg.png);
+	background-repeat:no-repeat;
+}
+#auxNav{
+	margin:7px 0 0 0;
+	padding:0 31px 0 0;
+	float:right;
+}
+#auxNav img{
+	margin:0 17px 0 0;
+	padding:0 0 0 0;
+}
+#nav{
+	margin: 43px 0 0 0;
+	padding:0 38px 0 0;
+	float:right;
+}
+#content{
+	margin:0 0 0 52px;
+	padding:0 0 0 0;
+	width:835px;
+	background-image:url(../images/contentBg_drill.png);
+	background-repeat:repeat-y;
+}
+#contentLeft{
+	margin:0 0 0 0;
+	padding:0 0 0 26px;
+	width:229px;
+	float:left;
+}
+#calloutBlue{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background-image:url(../images/blueCallout_bg.png);
+	background-repeat:repeat-y;
+	background-color:#fff;
+}
+#subNav{
+	margin:10px 0 0 0;
+	padding:0 0 0 0;
+}
+#subNav a{
+	margin:0 0 0 0;
+	padding:5px 0 5px 25px;
+	background-image:url(../images/subNav_blueDotArrow.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	color:#222761;
+	font-size:12px;
+	line-height:21px;
+	font-weight:bold;
+	text-decoration:none;
+}
+#subNav a:hover{
+	background-image:url(../images/subNav_blueDotArrow_over.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	color:#1569aa;
+	text-decoration:none;
+}
+#subNav a.on{
+	background-image:url(../images/subNav_blueDotArrow_over.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	color:#1569aa;
+	text-decoration:none;
+}
+.calloutContent{
+	margin:0 0 0 20px;
+	padding:0 0 0 0;
+}
+#calloutGreen{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background-image:url(../images/greenCallout_bg.png);
+	background-repeat:repeat-y;
+	background-color:#fff;
+}
+#contentRight{
+	margin:0 0 0 0;
+	padding:0 40px 0 0;
+	width:520px;
+	float:right;
+}
+.signInHr{
+	margin:0 0 0 0;
+	padding:0 0 10px 0;
+}
+#calloutLogIn{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background-image:url(../images/logIn_bg.png);
+	background-repeat:repeat-y;
+	background-color:#ffffff;
+	width:485px;
+}
+#calloutLogInInterior{
+	margin:0 0 0 30px;
+	padding:0 0 0 0;
+	width:430px;
+}
+#calloutLogInInterior a{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	text-decoration:none;
+}
+#calloutLogInInterior a:hover{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	text-decoration:underline;
+	color:#000000;
+}
+#calloutLogInInterior .calloutLeft{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	width:150px;
+	float:left;
+}
+#calloutLogInInterior .calloutLeft img{
+	border:7px solid #EFFBFF;
+}
+#calloutLogInInterior .calloutRight{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	width:250px;
+	float:right;
+}
+input{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	border:1px solid #238cad;
+	background-color:#ffffff;
+	line-height:21px;
+}
+.loginForm{
+	margin:15px 0 0 0;
+	padding:0 0 0 34px;
+}
+#contentRight img.thumb{
+	margin:0 0 0 5px;
+	padding:0 0 0 0;
+	float:right;
+	border:7px solid #fff;
+}
+#contentRight img.execBio{
+	margin:0 5px 0 0;
+	padding:0 0 0 0;
+	border:7px solid #fff;
+	float:left;
+}
+#products{
+	margin:10px 10px 0 0;
+	padding:0 0 0 0;
+	background-color:#ffffff;
+	background-image:url(../images/products_bg.png);
+	width:250px;
+	float:left;
+}
+#products a{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	text-decoration:none;
+}
+#products a:hover{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	text-decoration:underline;
+	color:#000000;
+}
+#products .productsThumb{
+	border:7px solid #FDB363;
+}
+#footerNav{
+	margin:0 0 0 52px;
+	padding:0 0 0 0;
+	width:835px;
+	height:100px;
+	background-image:url(../images/footerBg.png);
+	background-repeat:no-repeat;
+}
+#footerInterior{
+	margin:0 0 0 27px;
+	padding:42px 0 0 0;
+	width:320px;
+}
+#footerInterior p{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	color:#fff;	
+}
+#footerInterior a{
+	color:#fff;
+	font-size:9px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:bold;
+}
+#footerInterior a:hover{
+	color:#460505;
+	text-decoration:none;
+}

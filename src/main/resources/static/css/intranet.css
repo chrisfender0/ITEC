@@ -1,0 +1,325 @@
+/* CSS Document */
+
+/*********************************************************************
+
+Style Reset - removes browser defaults
+
+**********************************************************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+/*************************************************************
+MAIN GENERAL STYLES
+*************************************************************/
+body {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background-image:url(../images/intranet_bodyBg.jpg);
+	background-repeat:repeat-x;
+	background-color:#dcf088;
+	font-family:Arial, Helvetica, sans-serif;
+}
+img
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	behavior: url(css/png_fix.htc);
+}
+flash
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+form{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.clear{ 
+  	clear:both; 
+	/*** these next attributes are designed to keep the div 
+	height to 0 pixels high, critical for Safari and Netscape 7 ***/ 
+	  height:1px; 
+	  overflow:hidden; 
+	  line-height:1%; 
+	  font-size:0px; 
+	  margin-bottom:-1px; 
+} 
+/*************************************************
+UNIVERSAL STYLES
+**************************************************/
+h1{
+	margin:0 0 10px 0;
+	padding:0 0 0 0;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#320303;
+}
+h2{
+	margin:0 0 10px 0;
+	padding:0 0 0 0;
+	font-size:14px;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#320303;
+}
+h3{
+	margin:0 10px 10px 0;
+	padding:0 0 0 0;
+	font-size:10px;
+	font-weight:bold;
+	color:#320303;
+}
+h4{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	color:#ddf088;
+	text-transform:uppercase;
+	font-size:12px;
+}
+h5{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	color:#053b69;
+	text-transform:uppercase;
+	font-size:12px;
+}
+p{
+	margin:0 0 0 0;
+	padding:0 0 7px 0;
+	color:#200202;
+	font-size:12px;
+	line-height:18px;
+}
+ul{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+li{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+a{	
+	color:#000;
+	text-decoration:underline;
+}
+a:hover{	
+	color:#fff;
+	text-decoration:underline;
+}
+a.link{	
+}
+a:hover.link{	
+}
+.generalHeader{
+	margin:0 0 0 8px;
+	padding:5px 0 5px 31px;
+	background-image:url(../images/blueDotArrow.png);
+	background-position:left;
+	background-repeat:no-repeat;
+}
+.generalHeader:hover{
+	background-image:url(../images/blueDotArrow_over.png);
+	background-position:left;
+	background-repeat:no-repeat;
+}
+table.directory{
+	margin:0 0 10px 0;
+	padding:0 0 0 0;
+	border:1px solid #053d51;
+	font-size:12px;
+	width:100%;
+}
+table.directory td{
+	width:25%;
+}
+table.directory td td{
+	width:25%;
+}
+table.directory td td td{
+	width:25%;
+}
+table.directory td td td td{
+	width:25%;
+}
+table.formsTable{
+	margin:0 0 10px 0;
+	padding:0 0 0 0;
+	border:1px solid #053d51;
+	font-size:12px;
+	width:100%;
+}
+table.formsTable td{
+	width:90%;
+	vertical-align:top;
+}
+table.formsTable td td{
+	width:10%;
+}
+td.green {
+	padding:4px 4px 4px 4px;
+	background-color:#88ba55; 
+	color: #320303;
+	border-bottom:1px solid #053d51;
+}
+td.dkBlue {
+	padding:4px 4px 4px 4px;
+	background-color: #065f89; 
+	color: #fff;
+	border-bottom:1px solid #053d51;
+}
+td.ltBlue {
+	padding:4px 4px 4px 4px;
+	background-color: #078ece; 
+	color: #fff;
+	border-bottom:1px solid #053d51;
+}
+/*************************************************
+CONTAIN
+**************************************************/
+#contain{
+	margin:0 auto;
+	padding:0 0 0 0;
+	width:801px;
+}
+#header{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	width:801px;
+}
+#headerLeft{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	float:left;
+	width:266px;
+}
+#headerRight{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	float:right;
+	width:530px;
+}
+#intranetAuxNav{
+	margin:0 0 0 0;
+	padding:0 10px 0 10px;
+	background-image:url(../images/intranet_auxNavBg.png);
+	background-repeat:no-repeat;
+	float:right;
+	width:280px;
+	height:89px;
+}
+#auxNavLeft{
+	margin:10px 0 0 10px;
+	padding:0 0 0 0;
+	width:170px;
+	float:left;
+}
+#auxNavRight{
+	margin:15px 0 0 10px;
+	padding:0 0 0 0;
+	width:87px;
+	float:left;
+}
+#intranetAuxNav .auxNavHeader{
+	margin:0 0 0 0;
+	padding:5px 0 3px 25px;
+	background-image:url(../images/subNav_blueDotArrow.png);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+#intranetAuxNav .auxNavHeader:hover{
+	background-image:url(../images/subNav_blueDotArrow_over.png);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+.loginForm{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+input{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	border:1px solid #238cad;
+	background-color:#ffffff;
+	width:100px;
+}
+#intranetNav{
+	margin:60px 0 0 0;
+	padding:0 0 0 0;
+	width:530px;
+	height:22px;
+}
+#intranetNav a{
+	margin:0 6px 0 6px;
+	padding:12px 0 0 20px!important;
+	padding:0 0 0 20px;
+
+	background-image:url(../images/intranet_nav_blueDot_up.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	
+}
+#intranetNav a:hover{
+	background-image:url(../images/intranet_nav_blueDot_over.png);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+#intranetContent{
+	margin:0 0 0 0;
+	padding:30px 0 0 0;
+	width:801px;
+	background-color:#f7f8f8;
+}
+#intranetContentLeft{
+	margin:0 0 0 15px;
+	padding:0 0 0 0;
+	width:211px;
+	float:left;
+}
+#intranetContentLeft .subNavHeader{
+	margin:0 0 20px 0;
+	padding:0 0 0 0;
+}
+#intranetContentRight{
+	margin:0 15px 0 20px;
+	padding:0 0 0 20px;
+	width:502px;
+	float:right;
+	border-left:1px solid #88ba55;
+}
+#intranetFooter{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	width:801px;
+	height:46px;
+	background-image:url(../images/intranet_footerBg.png);
+	background-repeat:no-repeat;
+}
+#intranetFooterInterior{
+	margin:0 0 0 35px;
+	padding:22px 0 0 0;
+	width:410px;
+}
+#intranetFooterInterior p{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	color:#fff;	
+}
+#intranetFooterInterior a{
+	margin:0 10px 0 10px;
+	padding:0 0 0 0;
+	color:#fff;
+	font-size:9px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:bold;
+}
+#intranetFooterInterior a:hover{
+	color:#460505;
+	text-decoration:none;
+}

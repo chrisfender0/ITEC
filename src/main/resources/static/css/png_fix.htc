@@ -1,0 +1,56 @@
+<public:component>
+	 <public:attach event="onpropertychange" for="element" onEvent="propertyChanged()" />
+	 <script language="JavaScript">
+	
+		var needHack = needHack();
+	
+		var transparentImage = "css/transparent.gif";
+	
+		pngHack();
+	
+		function propertyChanged()
+		{
+			if (event.propertyName == "src")
+				pngHack();
+		}
+	
+		function pngHack()
+		{
+			if (!needHack)
+				return;
+	
+			var src = element.src;
+			
+			var tmp_width = element.width;
+			var tmp_height = element.height;
+	
+			if (src.indexOf(transparentImage) != -1)
+				return; 
+	
+			if (src.indexOf("png") == -1)
+			{
+				element.runtimeStyle.filter = "";
+				return;
+			}
+	
+			element.src = transparentImage;
+			
+			element.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + src + "',sizingMethod='scale')";
+			element.width 	= tmp_width;
+			element.height 	= tmp_height;
+		}
+	
+		function needHack()
+		{
+			var pos = navigator.userAgent.indexOf("MSIE ");
+	
+			if (pos == -1)
+				return false;
+	
+			var version = navigator.userAgent.substring(pos + 5);
+	
+			return (((version.indexOf("5.5") == 0) || (version.indexOf("6") == 0)) && (navigator.platform == ("Win32")));
+		}
+	
+	</script>
+</public:component>
