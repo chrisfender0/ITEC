@@ -16,5 +16,10 @@ let modal = {
 			} else {
 				$("#oddDayProduct").removeClass("hide");
 			}
+		},
+		flashTitle: function(){
+			setInterval(function(){
+				let color = $(".modalTitle").css('color') == "rgb(255, 0, 0)" ? $(".modalTitle").css('color','black') : $(".modalTitle").css('color','red');
+			}, 700)
 		}
 }
