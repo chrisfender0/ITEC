@@ -80,4 +80,39 @@ public class HomeController {
 		return mv;
 	}
 	
+	@RequestMapping(value= {"portal","portal.html"})
+	public ModelAndView portal(ModelAndView mv) {
+		System.out.println("portal hit");
+		mv.setViewName("portal");
+		return mv;
+	}
+	
+	@RequestMapping(value= {"intranetHome","intranetHome.html"})
+	public ModelAndView intranetHome(ModelAndView mv) {
+		System.out.println("intranetHome hit");
+		mv.setViewName("intranetHome");
+		return mv;
+	}
+	
+	@RequestMapping(value= {"forms","forms.html"})
+	public ModelAndView forms(ModelAndView mv) {
+		System.out.println("forms hit");
+		mv.setViewName("forms");
+		return mv;
+	}
+	
+	@RequestMapping(value= {"employeeDirectory","employeeDirectory.html"})
+	public ModelAndView employeeDirectory(ModelAndView mv) {
+		System.out.println("employeeDirectory hit");
+		mv.setViewName("employeeDirectory");
+		return mv;
+	}
+	
+	@RequestMapping(value= {"offices","offices.html"})
+	public ModelAndView offices(ModelAndView mv) {
+		System.out.println("offices hit");
+		mv.setViewName("offices");
+		return mv;
+	}
+	
 }
