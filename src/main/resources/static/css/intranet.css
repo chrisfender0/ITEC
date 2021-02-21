@@ -323,3 +323,10 @@ input{
 	color:#460505;
 	text-decoration:none;
 }
+#loginbutton{
+	width: 74px !important;
+	height: 27px;
+}
+.hide {
+	display: none;
+}

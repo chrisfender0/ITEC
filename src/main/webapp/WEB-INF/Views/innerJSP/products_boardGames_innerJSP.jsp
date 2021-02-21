@@ -1,5 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
 <!-- InstanceBegin template="/Templates/drill.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <link rel="SHORTCUT ICON"
@@ -99,53 +102,7 @@
 				<!-- InstanceBeginEditable name="content" -->
 				<h1>Games</h1>
 
-				<div id="calloutLogIn">
-					<img src="images/logIn_top.png" width="485" height="25" />
-					<div id="calloutLogInInterior">
-						<div class="calloutLeft">
-							<img src="images/products_game.png" width="150" height="180"
-								alt="Penguin" />
-						</div>
-						<div class="calloutRight">
-							<h2>Packet the porcupine The Game</h2>
-							<p>Someone has hacked Packet's website and changed all the
-								text to wingdings! Help Packet and his friends figure out who
-								hacked the website and fix all the errors! Collect meta-data and
-								bit clues along the way and learn about internet security.</p>
-							<h6>Retail Price $29.99</h6>
-						</div>
-						<div class="clear">&nbsp;</div>
-					</div>
-					<!--end calloutLogInInterior-->
-					<img src="images/logIn_bottom.png" width="485" height="26" />
-				</div>
-				<!--end calloutLogIn-->
-				<!--end calloutLogIn-->
-				<br />
-				<div id="calloutLogIn">
-					<img src="images/logIn_top.png" width="485" height="25" />
-					<div id="calloutLogInInterior">
-						<div class="calloutLeft">
-							<img src="images/products_game_bear.png" width="150" height="180"
-								alt="Penguin" />
-						</div>
-						<div class="calloutRight">
-							<h2>Byte the Bear Computer game</h2>
-							<p>Byte the Bear needs to update his software project for
-								school before they reboot the server! Help Byte get his software
-								project working and ready to present to the class.</p>
-							<h6>Retail Price $29.99</h6>
-						</div>
-						<div class="clear">&nbsp;</div>
-					</div>
-					<!--end calloutLogInInterior-->
-					<img src="images/logIn_bottom.png" width="485" height="26" />
-				</div>
-				<!--end calloutLogIn-->
-				<!--end calloutLogIn-->
-				<!--end calloutLogIn-->
-				<!-- InstanceEndEditable -->
-				<!--end contentTemplate-->
+				<%@ include file="productDisplay.jsp" %>
 			</div>
 			<!--end contentRight-->
 			<div class="clear">&nbsp;</div>
@@ -167,4 +124,6 @@
 	<!--end contain-->
 </body>
 <!-- InstanceEnd -->
+</html>
+
 </html>

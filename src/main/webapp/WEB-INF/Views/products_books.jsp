@@ -10,7 +10,7 @@
 <body>
 
 
-<%@ include file="html/products_books.html" %>
+<%@ include file="innerJSP/products_books_innerJSP.jsp" %>
 
 </body>
 </html>

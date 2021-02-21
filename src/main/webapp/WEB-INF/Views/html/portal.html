@@ -26,31 +26,42 @@
 			<a href="default.html"><img src="images/intranetLogo.png" alt="PPI" width="266" height="176" border="0" /></a> </div>
 		<!--end headerLeft-->
 		<div id="headerRight">
+<form method="post" action="/intranetHome">		
 			<div id="intranetAuxNav">
 			    <!-- InstanceBeginEditable name="logIn" -->			  <img class="auxNavHeader" src="images/intranet_auxNav_hr_signIn.png" width="114" height="19" alt="Employee Sign In" />
 				<div id="auxNavLeft">
 				<table border="0" cellspacing="0" cellpadding="10" class="loginForm">
   <tr>
     <td><h3>User Name:</h3></td>
-    <td><input type="text" id="username" /></td>
+    <td><input type="text" id="username" name="user"/></td>
   </tr>
   <tr>
     <td><h3>Password:</h3></td>
-    <td><input type="text" id="password" /></td>
+    <td><input type="password" id="password" name="pass"/></td>
   </tr>
 </table>
 </div><!--end auxNavLeft-->
-<div id="auxNavRight"><a href="intranetHome.html">
+<div id="auxNavRight">
+<input id="loginbutton" type="image" src="images/btn_logIn.png" alt="Log In"></input>
+<!-- 
+<a href="intranetHome.html">
 
-
+ 
 <img src="images/btn_logIn.png" hsrc="images/btn_logIn_over.png" width="74" height="27" alt="Log In" osrc="images/btn_logIn.png">
-<!--  
+
 <img src="images/btn_logOut_up.png" hsrc="images/btn_logOut_over.png" width="74" height="27" alt="Log Out" />
+</a>
+
+
+</p>
 -->
 
-</a></p></div><!--end auxNavRight-->
+</div><!--end auxNavRight-->
 				<!-- InstanceEndEditable --><div class="clear">&nbsp;</div>
-		  </div><!--end auxNav--><div class="clear">&nbsp;</div>
+		  </div><!--end auxNav-->
+</form>		  
+		  
+		  <div class="clear">&nbsp;</div>
 			<div id="intranetNav"><!-- InstanceBeginEditable name="nav" --><a href="default.html"><img src="images/intranet_nav_ppiHome_up.png" alt="PPI Home" width="70" height="22" hsrc="images/intranet_nav_ppiHome_over.png" /></a><!-- InstanceEndEditable --><!--end TemplateNav--></div>
 			<!--end nav--></div><!--end headerRight--><div class="clear">&nbsp;</div></div><!--end header--><div id="intranetContent"><div id="intranetContentLeft"><!-- InstanceBeginEditable name="callout" --><img class="subNavHeader" src="images/intrante_hr_employeeSignIn.png" alt="Employee Sign In" /><img src="images/intranet_calloutWelcome.jpg" alt="Welcome" /><!-- InstanceEndEditable --><!--end templateCallout--></div>
 			<!--end intranetContentLeft--><div id="intranetContentRight">
